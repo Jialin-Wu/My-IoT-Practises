@@ -1,0 +1,33 @@
+{
+    "bridge": {
+        "name": "HomeKit Bridge",
+        "username": "00:0C:29:A5:E8:F1",
+        "port": 51825,
+        "pin": "158-18-158"
+	      },
+
+
+"platforms": [
+  {
+    "platform": "HomeAssistant",
+    "name": "HomeAssistant",
+    "host": "http://137.200.250.8:8123",
+    "password": "",
+    "supported_types": ["automation", "binary_sensor", "climate", "cover", "device_tracker", "fan", "group", "input_boolean", "light", "lock", "media_player", "remote", "scene", "script", "sensor", "switch", "vacuum"],
+    "default_visibility": "visible",
+    "logging": false,
+    "verify_ssl":  false
+  }
+	    ],
+
+"accessories": [
+    {
+    "accessory": "MiGatewayFM",
+    "name": "MiGatewayFM",
+    "ip": "137.200.250.108",
+    "token": "405e5d5fefb6d8333d7790dd219d3ba3"
+    }
+   ]
+
+
+}
